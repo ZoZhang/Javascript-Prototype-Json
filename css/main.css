@@ -42,32 +42,42 @@ main {
 .empty-resultat {
     border: 0.2rem solid #ffce42 !important;
 }
+main section article header h1 {
+    font-size: 1.7rem;
+}
+main section footer > div ul li{
+    max-height: 1.37rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main section footer > div ul li a {
+        font-size: 0.9rem;
+}
 /**
  * RFC Home Page
  */
 main.home-page{
-    align-items: center;
-}
-main section article header h1 {
-    font-size: 1.7rem;
+    align-items: center;   
 }
 main section:first-child header img{
+    max-width:100%;
     margin: 0 0 2rem 0;
 }
 main section:first-child footer form {
     display: flex;
 }
 main section:first-child footer input{
+    flex: 7;
     color: #8e8c8c;
     font-size: 0.8rem;
     line-height: 2.4rem;
-    min-width: 20vw;
     margin: 0 0.6rem 0 0;
     padding: 0 2rem 0 1rem;
     border-radius: 0.7rem;
     border: 0.2rem solid #d0cbcb
 }
 main section:first-child footer button{
+    flex:3;
     color:#8e8c8c;
     cursor: pointer;
     font-size: 0.8rem;
@@ -81,11 +91,13 @@ main section:first-child footer button:hover{
     background-color: #d0cbcb;
 }
 main section:first-child footer > div{
-    max-height: 13.8rem;
+    max-height: 13.4rem;
     overflow-y: scroll;
     text-align: left;
     line-height: 1.6rem;
+    max-width: 21.2rem;
     position: absolute;
+    padding: 0.2rem;
     margin: 0.6rem 0 0 0.4rem;
 }
 /**
@@ -112,6 +124,27 @@ main section:last-child > article > footer,
 main section:last-child > article > address{
     text-align:left;
 }
-main.view-page section:first-child footer > div {
-    max-height: 100%;
+
+/** 
+ * Mobile Responsive
+ */
+@media only screen and (max-width: 600px) {
+ 
+    main.view-page {
+        display:block;
+    }
+
+    main.view-page section:last-child > article {
+        padding:0;
+    }
+
+    main.view-page section:first-child footer > div{
+        position: initial;
+        padding-bottom: 0.7rem;
+        max-height: 6.5rem;
+        max-width: 23.5rem;
+        border-bottom: 1px dashed #d0cbcb;
+    }
+
 }
+
