@@ -1,0 +1,117 @@
+/**
+ * Travail individuel pour langage web - Monsieur Olivier Gérard
+ *
+ * Main styles
+ *
+ * @author ZHANG Zhao
+ * @email  zo.zhang@gmail.com
+ * @demo   langage-web.zhaozhang.fr
+ */
+/**
+ * Global Styles
+ */
+a{
+    color: #4a3e3e;;
+    text-decoration: none;
+}
+a:hover{
+    color: #969696;
+    text-decoration: underline;
+}
+ul,li{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+input:focus{
+    outline: none;
+}
+main {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+}
+.hide{
+    display: none !important;
+}
+.required-keyword {
+    border: 0.2rem solid #ecb5b5 !important;
+}
+.empty-resultat {
+    border: 0.2rem solid #ffce42 !important;
+}
+/**
+ * RFC Home Page
+ */
+main.home-page{
+    align-items: center;
+}
+main section article header h1 {
+    font-size: 1.7rem;
+}
+main section:first-child header img{
+    margin: 0 0 2rem 0;
+}
+main section:first-child footer form {
+    display: flex;
+}
+main section:first-child footer input{
+    color: #8e8c8c;
+    font-size: 0.8rem;
+    line-height: 2.4rem;
+    min-width: 20vw;
+    margin: 0 0.6rem 0 0;
+    padding: 0 2rem 0 1rem;
+    border-radius: 0.7rem;
+    border: 0.2rem solid #d0cbcb
+}
+main section:first-child footer button{
+    color:#8e8c8c;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: none;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #d0cbcb;
+    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+}
+main section:first-child footer button:hover{
+    color: #fff;
+    background-color: #d0cbcb;
+}
+main section:first-child footer > div{
+    max-height: 13.8rem;
+    overflow-y: scroll;
+    text-align: left;
+    line-height: 1.6rem;
+    position: absolute;
+    margin: 0.6rem 0 0 0.4rem;
+}
+/**
+ * RFC View Page
+ */
+main section:first-child > div {
+    text-align: left;
+}
+main section:first-child > div ul li {
+    line-height: 1.3rem;
+    margin:0 0 0.5rem 0;
+}
+main section:last-child > article{
+    padding: 0 2rem 0 4rem;
+}
+main section:last-child > article > header > p{
+    justify-content: space-around;
+    display: flex;
+}
+main section:last-child > article > footer > p{
+    line-height: 1.5rem;
+}
+main section:last-child > article > footer,
+main section:last-child > article > address{
+    text-align:left;
+}
+main.view-page section:first-child footer > div {
+    max-height: 100%;
+}

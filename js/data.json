@@ -1,0 +1,463 @@
+[
+  {
+    "title": "RFC1149 A Standard for the Transmis Standard for the Transmis",
+    "keyword": "RFC1149",
+    "author":"D. Waitzman",
+    "publish_date":"1 April 1990",
+    "content": [
+      {
+        "subtitle": "Status of this Memo",
+        "text": "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard. Distribution of this memo is unlimited."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "Avian carriers can provide high delay, low throughput, and low altitude service. The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3. The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."
+      },
+      {
+        "subtitle": "Frame Format",
+        "text": "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges.  The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age.  A typical MTU is 256 milligrams.  Some datagram padding may be needed.<br/> Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
+      },
+      {
+        "subtitle": "Discussion",
+        "text": "Multiple types of service can be provided with a prioritized pecking order.  An additional property is built-in worm detection and eradication.  Because IP only guarantees best effort delivery, loss of a carrier can be tolerated.  With time, the carriers are self-regenerating. While broadcasting is not specified, storms can cause data loss.  There is persistent delivery retry, until the carrier drops.  Audit trails are automatically generated, and can often be found on logs and cable trays."
+      },
+      {
+        "subtitle": "Security Considerations",
+        "text": "Security is not generally a problem in normal operation, but special measures must be taken (such as data encryption) when avian carriers are used in a tactical environment."
+      }
+    ],
+    "contacts": {
+      "adresse" : "David Waitzman<br/>BBN Systems and Technologies Corporation<br/>BBN Labs Division<br/>10 Moulton Street<br/>Cambridge, MA 02238",
+      "telephone":"(617) 873-4323",
+      "email" : "dwaitzman@BBN.COM"
+    }
+  },
+  {
+    "title": "IP over Avian Carriers with Quality of Service",
+    "keyword": "RFC2549",
+    "author":"D. Waitzman",
+    "publish_date":"3 April 1990",
+    "content": [
+      {
+        "subtitle": "Status of this Memo",
+        "text": "This memo defines an Experimental Protocol for the Internet community.  It does not specify an Internet standard of any kind.Discussion and suggestions for improvement are requested.Distribution of this memo is unlimited."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (C) The Internet Society (1999).  All Rights Reserved."
+      },
+      {
+        "subtitle": "Abstract",
+        "text": "This memo amends RFC 1149, A Standard for the Transmission of IP Datagrams on Avian Carriers, with Quality of Service information.This is an experimental, not recommended standard."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "David Waitzman<br/>David Waitzman<br/>David Waitzman<br/>David Waitzman<br/>",
+      "telephone":"(781) 372-8161",
+      "email" : "djw@vineyard.net"
+    }
+  },
+  {
+    "title": "Adaptation of RFC 1149 for IPv6",
+    "keyword": "RFC6214",
+    "author":"D. Waitzman",
+    "publish_date":"6 April 1990",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document specifies a method for transmission of IPv6 datagrams over the same medium as specified for IPv4 datagrams in RFC 1149."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This is a contribution to the RFC Series, independently of any other RFC stream.  The RFC Editor has chosen to publish this document at its discretion and makes no statement about its value for implementation or deployment.  Documents approved for publication by the RFC Editor are not a candidate for any level of Internet Standard; see Section 2 of RFC 5741.<br/>Information about the current status of this document, any errata,and how to provide feedback on it may be obtained at http://www.rfc-editor.org/info/rfc6214."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "David Waitzman<br/>David Waitzman<br/>David Waitzman<br/>David Waitzman<br/>",
+      "telephone":"(781) 372-8161",
+      "email" : "djw@vineyard.net"
+    }
+  },
+  {
+    "title": "Reverse DNS in IPv6 for Internet Service Providers",
+    "keyword": "RFC8501",
+    "author":"L. Howard",
+    "publish_date":"November 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "In IPv4, Internet Service Providers (ISPs) commonly provide IN-ADDR.ARPA information for their customers by prepopulating the zone with one PTR record for every available address.  This practice does not scale in IPv6.  This document analyzes different approaches and considerations for ISPs in managing the IP6.ARPA zone."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "Lee Howard<br/>Retevia<br/>Fairfax, VA  22032<br/>United States of America<br/>",
+      "email" : "lee.howard@retevia.net"
+    }
+  },
+  {
+    "title": "Allocation Token Extension<br/>for the Extensible Provisioning Protocol (EPP)",
+    "keyword": "RFC8495",
+    "author":"J. Gould",
+    "publish_date":"Septembre 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Bootstrapping WebSockets wi Bootstrapping WebSockets",
+    "keyword": "RFC8441",
+    "author":"J. Gould",
+    "publish_date":"Janvier 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including create and transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Considerations for Selecting Considerations for Selecting",
+    "keyword": "RFC8451",
+    "author":"J. Gould",
+    "publish_date":"Avril 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "A New Cryptographic Signatu New Cryptographic Signatu",
+    "keyword": "RFC8463",
+    "author":"J. Gould",
+    "publish_date":"Mai 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Using PUT Data in form firefox chrome ie..",
+    "keyword": "RFC8490",
+    "author":"J. Gould",
+    "publish_date":"Juin 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "RFC1349 Using GET Data in form firefox",
+    "keyword": "RFC1349",
+    "author":"J. Gould",
+    "publish_date":"Décembre 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "A Standard for the Protocol Standard for the Protocol",
+    "keyword": "RFC1249",
+    "author":"J. Gould",
+    "publish_date":"Juillet 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Using Early From Data in HTTP Early From Data",
+    "keyword": "RFC9949",
+    "author":"J. Gould",
+    "publish_date":"Octobre 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Using PUT Data in HTTP form for uploade",
+    "keyword": "RFC6749",
+    "author":"J. Gould",
+    "publish_date":"November 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  },
+  {
+    "title": "Using DELETE Data in form safari firefox opera",
+    "keyword": "RFC9249",
+    "author":"J. Gould",
+    "publish_date":"November 2018",
+    "content": [
+      {
+        "subtitle": "Abstract",
+        "text": "This document describes an Extensible Provisioning Protocol (EPP) extension for including an Allocation Token in query and transform commands.  The Allocation Token is used as a credential that authorizes a client to request the allocation of a specific object from the server using one of the EPP transform commands,including   create and  transfer."
+      },
+      {
+        "subtitle": "Status of This Memo",
+        "text": "This document is not an Internet Standards Track specification; it is published for informational purposes.<br/>This document is a product of the Internet Engineering Task Force (IETF).  It represents the consensus of the IETF community.  It has Internet Engineering Steering Group (IESG).  Not all documents approved by the IESG are candidates for any level of Internet Standard; see Section 2 of RFC 7841.<br/>Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8501."
+      },
+      {
+        "subtitle": "Copyright Notice",
+        "text": "Copyright (c) 2011 IETF Trust and the persons identified as the document authors.  All rights reserved.<br/>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
+      },
+      {
+        "subtitle": "Overview and Rational",
+        "text": "The following quality of service levels are available: Concorde,First, Business, and Coach.  Concorde class offers expedited data delivery.  One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet.  Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains.The service level is indicated on a per-carrier basis by bar-code markings on the wing.  One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued.For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime.Packets MAY be marked for deletion using RED paint while enqueued.Weighted fair queueing (WFQ) MAY be brain-embedded IP addresses is difficult, plus Avian Carriers MAY eat the NATs. Encapsulation may be done with saran wrappers.  Unintentional encapsulation in hawks has been known to occur, with decapsulation being messy and the packets mangled.Loose source routes are a viable evolutionary alternative enhanced standards-based MSWindows-compliant technology, but strict source routes MUST NOT be used, as they are a choke-point. The ITU has offered the IETF formal alignment with its corresponding technology, Penguins, but that won't fly. Multicasting is supported, but requires the implementation of a clone device.  Carriers may be lost if they are based on a tree as it is being pruned.  The carriers propagate via an inheritance tree.  The carriers have an average TTL of 15 years, so their use in expanding ring searches is limited.Additional quality of service discussion can be found in a Michelin's guide."
+      },
+      {
+        "subtitle": "Specification of Requirements",
+        "text": "There are privacy issues with stool pigeons.<br/>  "
+      }
+    ],
+    "contacts": {
+      "adresse" : "James Gould<br/>VeriSign, Inc.<br/>12061 Bluemont Way<br/>Reston, VA  20190<br/>United States of America<br/>",
+      "url":"http://www.verisign.com",
+      "email" : "jgould@verisign.com"
+    }
+  }
+]
