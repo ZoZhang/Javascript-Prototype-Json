@@ -116,7 +116,7 @@
                 }
             });
 
-            if ('undefined' === RFC.Parames.SearchContenue) {
+            if ('undefined' === typeof RFC.Parames.SearchContenue) {
                 return false;
             }
             return true;
@@ -129,12 +129,16 @@
                 $(RFC.Parames.OtherPage).remove();
             }
 
+            if ('undefined' === typeof RFC.Parames.SearchContenue) {
+                return ;
+            }
+
             // Add sugestion list
             RFC.setSugestion(RFC.Parames.FooterForm);
 
             var templage = '<section>';
 
-            templage += '<article><header><h1>' + RFC.Parames.SearchContenue.title + '</h1>' +
+            templage += '<article><header><h2>' + RFC.Parames.SearchContenue.title + '</h2>' +
                 '<p><span>'+RFC.Parames.SearchContenue.publish_date+'</span><span>'+RFC.Parames.SearchContenue.author+'</span></p></header>';
 
             templage += '<footer>';
